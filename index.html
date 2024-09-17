@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <script src="./js/main.js" defer></script>
+        <title>Color converter</title>
+    </head>
+    <body>
+        <div>
+            <input type="color" id="colorSpace" name="head" value="#a331cc"    />
+            <h2 id = "info">Измените поле или нажмите на цветной прямоугольник</h2>
+            <div class="content_div">
+                <div>
+                    <p>RGB:</p>
+                    <input type="text" id = "RGB">
+                </div>
+                <div>
+                    <p>XYZ:</p>
+                    <input type="text" id = "XYZ">
+                </div>
+                <div>
+                    <p>CMYK:</p>
+                    <input type="text" id = "CMYK">
+                </div>
+            </div>
+            <input class="sliders" type="range" id="slider_r" min="0" max="255" value="0">
+            <input class="sliders" type="range" id="slider_g" min="0" max="255" value="0">
+            <input class="sliders" type="range" id="slider_b" min="0" max="255" value="0">
+            <input type="number" id="rounding" value="5" min="0">
+        </div>
+    </body>
+</html>
